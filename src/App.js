@@ -141,7 +141,7 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {comics.map(comic => (
+              {comics?.map(comic => (
                 <tr key={comic.id}>
                   <td>{comic.get('name')}</td>
                   <td>{comic.get('publisher')}</td>
